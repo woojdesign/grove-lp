@@ -421,7 +421,7 @@ function StatCard({ stat, description, delay }: { stat: string; description: str
       whileHover={{ y: -8, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ delay, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="text-center p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-white/20 transition-colors"
+      className="text-center p-8"
     >
       <div className="mb-6 font-display text-stat font-light">
         {stat}
