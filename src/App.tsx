@@ -14,19 +14,12 @@ export default function App() {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Subtle animated gradient background */}
-      <div 
-        className="fixed inset-0 -z-10 animate-gradient opacity-30"
-        style={{
-          background: 'linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(250, 250, 249, 0) 30%, rgba(160, 120, 85, 0.1) 60%, rgba(250, 250, 249, 0) 100%)'
-        }}
-      />
+      <div className="fixed inset-0 -z-10 animate-gradient opacity-30 bg-gradient-subtle" />
       {/* Hero Section - Editorial Style */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary text-primary-foreground">
         <div className="absolute inset-0 z-0">
           {/* Reduced gradient overlay */}
-          <div className="absolute inset-0 z-10" style={{
-            background: 'radial-gradient(circle at 30% 20%, rgba(212, 165, 116, 0.12) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(160, 120, 85, 0.1) 0%, transparent 50%), linear-gradient(135deg, rgba(26, 26, 26, 0.65) 0%, rgba(26, 26, 26, 0.55) 50%, rgba(47, 69, 56, 0.6) 100%)'
-          }} />
+          <div className="absolute inset-0 z-10 bg-hero-overlay" />
           <img
             src={heroImage}
             alt="People connecting through shared interests"
@@ -46,26 +39,18 @@ export default function App() {
               </Badge>
             </motion.div>
             
-            <motion.h1 
+            <motion.h1
               variants={fadeInUp}
-              className="mx-auto max-w-5xl"
-              style={{ 
-                fontSize: 'clamp(2.5rem, 6vw, 5rem)',
-                lineHeight: '1.1',
-                fontFamily: 'Georgia, serif',
-                fontWeight: 300,
-                letterSpacing: '-0.02em'
-              }}
+              className="mx-auto max-w-5xl font-display text-hero font-light"
             >
               In every big company or school, there are{' '}
-              <span style={{ fontStyle: 'italic', color: '#d4a574' }}>hundreds of people</span>
+              <span className="italic text-accent-color">hundreds of people</span>
               {' '}you'd love to know but never meet.
             </motion.h1>
             
-            <motion.p 
+            <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl mx-auto max-w-3xl opacity-90"
-              style={{ lineHeight: '1.6', fontWeight: 300 }}
+              className="text-xl md:text-2xl mx-auto max-w-3xl opacity-90 leading-relaxed font-light"
             >
               Commonplace quietly introduces you to the people who share your passions, experiences, and goals — so large organizations feel a little more human again.
             </motion.p>
@@ -121,12 +106,7 @@ export default function App() {
 
       {/* The Problem - Large Editorial Text */}
       <section className="py-32 md:py-40 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 -z-10 animate-gradient opacity-20"
-          style={{
-            background: 'linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, rgba(250, 250, 249, 0) 40%, rgba(160, 120, 85, 0.06) 70%, rgba(250, 250, 249, 0) 100%)'
-          }}
-        />
+        <div className="absolute inset-0 -z-10 animate-gradient opacity-20 bg-gradient-warm" />
         <div className="container mx-auto px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -135,27 +115,18 @@ export default function App() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="space-y-12"
           >
-            <h2 
-              style={{ 
-                fontSize: 'clamp(2rem, 5vw, 4rem)',
-                lineHeight: '1.2',
-                fontFamily: 'Georgia, serif',
-                fontWeight: 300,
-                letterSpacing: '-0.02em',
-                textAlign: 'center'
-              }}
-            >
+            <h2 className="font-display text-section-heading font-light text-center">
               Organizations have never been more{' '}
-              <span style={{ fontStyle: 'italic' }}>connected</span> — and people have never felt more{' '}
-              <span style={{ fontStyle: 'italic' }}>disconnected.</span>
+              <span className="italic">connected</span> — and people have never felt more{' '}
+              <span className="italic">disconnected.</span>
             </h2>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-center" style={{ lineHeight: '1.7', fontWeight: 300 }}>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-center leading-loose font-light">
               Remote work, hybrid teams, and endless Slack threads mean that we know our coworkers' calendars better than we know them. Culture can't thrive if people never cross paths — and serendipity doesn't scale on its own.
             </p>
-            
+
             <div className="pt-8 text-center">
-              <p className="text-2xl md:text-3xl" style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif', fontWeight: 300, color: '#a07855' }}>
+              <p className="text-2xl md:text-3xl italic font-display font-light text-secondary-color">
                 Commonplace restores serendipity — intentionally.
               </p>
             </div>
@@ -187,20 +158,11 @@ export default function App() {
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               className="max-w-lg"
             >
-              <h3 
-                className="mb-6"
-                style={{ 
-                  fontSize: 'clamp(1.75rem, 4vw, 3rem)',
-                  lineHeight: '1.2',
-                  fontFamily: 'Georgia, serif',
-                  fontWeight: 300,
-                  letterSpacing: '-0.01em'
-                }}
-              >
+              <h3 className="mb-6 font-display text-subsection-heading font-light">
                 Thoughtful introductions, powered by{' '}
-                <span style={{ fontStyle: 'italic', color: '#d4a574' }}>quiet intelligence.</span>
+                <span className="italic text-accent-color">quiet intelligence.</span>
               </h3>
-              <p className="text-lg opacity-80 mb-8" style={{ lineHeight: '1.7', fontWeight: 300 }}>
+              <p className="text-lg opacity-80 mb-8 leading-loose font-light">
                 Commonplace asks a few fun, open-ended questions to learn what makes each person tick, then maps interests using AI embeddings — like semantic DNA for your community.
               </p>
               <Button 
@@ -225,17 +187,9 @@ export default function App() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="text-center mb-20"
           >
-            <h2 
-              style={{ 
-                fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-                lineHeight: '1.2',
-                fontFamily: 'Georgia, serif',
-                fontWeight: 300,
-                letterSpacing: '-0.02em'
-              }}
-            >
+            <h2 className="font-display text-section-heading-alt font-light">
               No scrolling. No feeds.{' '}
-              <span style={{ fontStyle: 'italic' }}>Just connection.</span>
+              <span className="italic">Just connection.</span>
             </h2>
           </motion.div>
 
@@ -264,12 +218,7 @@ export default function App() {
 
       {/* Trust Section - Light */}
       <section className="py-32 md:py-40 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 -z-10 animate-gradient opacity-20"
-          style={{
-            background: 'linear-gradient(135deg, rgba(160, 120, 85, 0.06) 0%, rgba(250, 250, 249, 0) 40%, rgba(212, 165, 116, 0.08) 70%, rgba(250, 250, 249, 0) 100%)'
-          }}
-        />
+        <div className="absolute inset-0 -z-10 animate-gradient opacity-20 bg-gradient-warm-reverse" />
         <div className="container mx-auto px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -278,17 +227,9 @@ export default function App() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="text-center mb-20"
           >
-            <h2 
-              style={{ 
-                fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-                lineHeight: '1.2',
-                fontFamily: 'Georgia, serif',
-                fontWeight: 300,
-                letterSpacing: '-0.02em'
-              }}
-            >
+            <h2 className="font-display text-section-heading-alt font-light">
               Safe, private, and built for{' '}
-              <span style={{ fontStyle: 'italic' }}>enterprises.</span>
+              <span className="italic">enterprises.</span>
             </h2>
           </motion.div>
 
@@ -317,17 +258,9 @@ export default function App() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="text-center mb-24"
           >
-            <h2 
-              style={{ 
-                fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-                lineHeight: '1.2',
-                fontFamily: 'Georgia, serif',
-                fontWeight: 300,
-                letterSpacing: '-0.02em'
-              }}
-            >
-              <span style={{ fontStyle: 'italic' }}>Belonging</span> drives retention.{' '}
-              <span style={{ fontStyle: 'italic' }}>Connection</span> drives innovation.
+            <h2 className="font-display text-section-heading-alt font-light">
+              <span className="italic">Belonging</span> drives retention.{' '}
+              <span className="italic">Connection</span> drives innovation.
             </h2>
           </motion.div>
 
@@ -366,12 +299,7 @@ export default function App() {
 
       {/* Final CTA - Minimal */}
       <section className="py-32 md:py-40 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 -z-10 animate-gradient opacity-20"
-          style={{
-            background: 'linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, rgba(250, 250, 249, 0) 40%, rgba(160, 120, 85, 0.06) 70%, rgba(250, 250, 249, 0) 100%)'
-          }}
-        />
+        <div className="absolute inset-0 -z-10 animate-gradient opacity-20 bg-gradient-warm" />
         <div className="container mx-auto px-6 md:px-12 max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -380,17 +308,9 @@ export default function App() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="text-center space-y-12"
           >
-            <h2 
-              style={{ 
-                fontSize: 'clamp(2rem, 5vw, 4rem)',
-                lineHeight: '1.2',
-                fontFamily: 'Georgia, serif',
-                fontWeight: 300,
-                letterSpacing: '-0.02em'
-              }}
-            >
+            <h2 className="font-display text-section-heading font-light">
               Ready to make your organization feel more{' '}
-              <span style={{ fontStyle: 'italic' }}>human?</span>
+              <span className="italic">human?</span>
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -409,7 +329,7 @@ export default function App() {
               </Button>
             </div>
 
-            <p className="text-muted-foreground pt-8" style={{ lineHeight: '1.7' }}>
+            <p className="text-muted-foreground pt-8 leading-loose">
               Commonplace pilots start with 200–500 users and grow organically.<br />
               We'll handle setup; you enjoy the ripple effects.
             </p>
@@ -459,17 +379,10 @@ function ProcessCard({ number, title, description, delay }: {
       <div className="text-sm text-muted-foreground tracking-widest uppercase mb-4">
         {number}
       </div>
-      <h3 
-        className="mb-3"
-        style={{ 
-          fontSize: 'clamp(1.5rem, 3vw, 2rem)',
-          fontFamily: 'Georgia, serif',
-          fontWeight: 300
-        }}
-      >
+      <h3 className="mb-3 font-display text-card-heading font-light">
         {title}
       </h3>
-      <p className="text-muted-foreground" style={{ lineHeight: '1.7' }}>
+      <p className="text-muted-foreground leading-loose">
         {description}
       </p>
     </motion.div>
@@ -496,19 +409,10 @@ function StatCard({ stat, description, delay }: { stat: string; description: str
       transition={{ delay, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="text-center"
     >
-      <div 
-        className="mb-6"
-        style={{ 
-          fontSize: 'clamp(3rem, 6vw, 5rem)',
-          fontFamily: 'Georgia, serif',
-          fontWeight: 300,
-          lineHeight: 1,
-          color: '#d4a574'
-        }}
-      >
+      <div className="mb-6 font-display text-stat font-light">
         {stat}
       </div>
-      <p className="text-sm opacity-80" style={{ lineHeight: '1.6' }}>
+      <p className="text-sm opacity-80 leading-relaxed">
         {description}
       </p>
     </motion.div>
@@ -524,16 +428,7 @@ function TestimonialCard({ quote, author, delay }: { quote: string; author: stri
       transition={{ delay, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="border border-white/10 rounded-lg p-10 backdrop-blur-sm"
     >
-      <p 
-        className="mb-6"
-        style={{ 
-          fontSize: 'clamp(1.25rem, 2vw, 1.5rem)',
-          fontStyle: 'italic',
-          fontFamily: 'Georgia, serif',
-          fontWeight: 300,
-          lineHeight: '1.5'
-        }}
-      >
+      <p className="mb-6 font-display text-testimonial font-light">
         "{quote}"
       </p>
       <p className="text-sm opacity-70 uppercase tracking-wider">
