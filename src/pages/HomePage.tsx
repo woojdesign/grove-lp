@@ -21,6 +21,10 @@ export function HomePage() {
 
       {/* Hero Section - Editorial Style */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary text-primary-foreground">
+        {/* Gradient Orbs for visual interest */}
+        <div className="gradient-orb gradient-orb-warm absolute top-20 right-10 w-96 h-96 animate-float" style={{ animationDelay: '0s' }} />
+        <div className="gradient-orb gradient-orb-cool absolute bottom-40 left-20 w-80 h-80 animate-float" style={{ animationDelay: '2s' }} />
+
         <div className="absolute inset-0 z-0">
           {/* Reduced gradient overlay */}
           <div className="absolute inset-0 z-10 bg-hero-overlay" />
@@ -63,20 +67,37 @@ export function HomePage() {
               variants={fadeInUp}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
             >
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-white/90 px-10 py-7 rounded-full transition-all duration-300 hover:scale-105"
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
               >
-                {content.hero.buttons.primary.text}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="ghost"
-                className="px-10 py-7 rounded-full text-white border-2 border-white/30 hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+                <Button
+                  size="lg"
+                  className="group relative overflow-hidden bg-white text-black hover:bg-white/90 px-10 py-7 rounded-full transition-all duration-300"
+                >
+                  <span className="relative z-10 flex items-center">
+                    {content.hero.buttons.primary.text}
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </span>
+                  {/* Subtle glow effect */}
+                  <span className="absolute inset-0 bg-gradient-to-r from-white to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </Button>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
               >
-                {content.hero.buttons.secondary.text}
-              </Button>
+                <Button
+                  size="lg"
+                  variant="ghost"
+                  className="px-10 py-7 rounded-full text-white border-2 border-white/30 hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+                >
+                  {content.hero.buttons.secondary.text}
+                </Button>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
@@ -182,7 +203,10 @@ export function HomePage() {
       </section>
 
       {/* How Commonplace Works - Minimal Cards */}
-      <section className="py-32 md:py-40 bg-muted/30">
+      <section className="py-32 md:py-40 bg-muted/30 relative overflow-hidden">
+        {/* Subtle gradient orb */}
+        <div className="gradient-orb gradient-orb-cool absolute top-10 left-10 w-72 h-72" style={{ opacity: '0.08' }} />
+
         <div className="container mx-auto px-6 md:px-12 max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -299,19 +323,33 @@ export function HomePage() {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-              <Button
-                size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 rounded-full transition-all duration-300 hover:scale-105"
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
               >
-                {content.finalCTA.buttons.primary.text}
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="px-10 py-7 rounded-full border-2 hover:bg-muted/50 transition-all duration-300"
+                <Button
+                  size="lg"
+                  className="group relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 rounded-full transition-all duration-300"
+                >
+                  <span className="relative z-10">{content.finalCTA.buttons.primary.text}</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary to-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </Button>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
               >
-                {content.finalCTA.buttons.secondary.text}
-              </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-10 py-7 rounded-full border-2 border-teal hover:bg-teal hover:text-white transition-all duration-300"
+                >
+                  {content.finalCTA.buttons.secondary.text}
+                </Button>
+              </motion.div>
             </div>
 
             <p className="text-muted-foreground pt-8 leading-loose">
@@ -342,17 +380,18 @@ function ProcessCard({ number, title, description, delay }: {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -4, transition: { duration: 0.3 } }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ delay, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       className="space-y-4"
     >
-      <div className="text-sm text-muted-foreground tracking-widest uppercase mb-4">
+      <div className="text-sm text-teal tracking-widest uppercase mb-4 font-sans font-semibold">
         {number}
       </div>
       <h3 className="mb-3 font-display text-card-heading font-light">
         {title}
       </h3>
-      <p className="text-muted-foreground leading-loose">
+      <p className="text-muted-foreground leading-loose font-sans">
         {description}
       </p>
     </motion.div>
@@ -361,28 +400,33 @@ function ProcessCard({ number, title, description, delay }: {
 
 function TrustFeature({ text }: { text: string }) {
   return (
-    <div className="flex items-center gap-3 text-lg">
-      <CheckCircle2 className="h-5 w-5 text-secondary flex-shrink-0" />
+    <motion.div
+      className="flex items-center gap-3 text-lg"
+      whileHover={{ x: 4 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+    >
+      <CheckCircle2 className="h-5 w-5 text-teal flex-shrink-0" />
       <p>
         {text}
       </p>
-    </div>
+    </motion.div>
   );
 }
 
 function StatCard({ stat, description, delay }: { stat: string; description: string; delay: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      whileHover={{ y: -8, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ delay, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="text-center"
+      className="text-center p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-white/20 transition-colors"
     >
       <div className="mb-6 font-display text-stat font-light">
         {stat}
       </div>
-      <p className="text-sm opacity-80 leading-relaxed">
+      <p className="text-sm opacity-80 leading-relaxed font-sans">
         {description}
       </p>
     </motion.div>
@@ -394,14 +438,15 @@ function TestimonialCard({ quote, author, delay }: { quote: string; author: stri
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -4, boxShadow: "0 20px 40px rgba(0,0,0,0.2)", transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ delay, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="border border-white/10 rounded-lg p-10 backdrop-blur-sm"
+      className="border border-white/10 rounded-lg p-10 backdrop-blur-sm hover:border-white/20 transition-colors"
     >
       <p className="mb-6 font-display text-testimonial font-light">
         "{quote}"
       </p>
-      <p className="text-sm opacity-70 uppercase tracking-wider">
+      <p className="text-sm opacity-70 uppercase tracking-wider font-sans">
         {author}
       </p>
     </motion.div>

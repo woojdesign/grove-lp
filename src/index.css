@@ -1419,6 +1419,167 @@
   }
 }
 
+/* === Tiempos Font Face Declarations === */
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-light-italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-regular-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-medium-italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-semibold-italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-bold-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/tiempos/test-tiempos-headline-black-italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-regular-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-medium-italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-semibold-italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/fonts/tiempos/test-tiempos-text-bold-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   /* === Base === */
   --font-size: 16px;
@@ -1446,14 +1607,36 @@
   --switch-background: #d4d4d8;
   --ring: #a07855;
 
+  /* === Cool Professional Accents (Competence) === */
+  --color-teal: #2d7d6c;
+  --color-teal-light: #3a9d89;
+  --color-blue: #3b5998;
+  --color-navy: #1a2332;
+
+  /* === Warm Accents (Warmth) - Enhanced === */
+  --color-accent: #d4a574;
+  --color-accent-light: #e4c4a0;
+  --color-accent-dark: #a07855;
+  --color-coral: #ff6b6b;
+
+  /* === Neutral Scale === */
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-800: #262626;
+  --gray-900: #171717;
+
   /* === Typography === */
-  --font-family-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-serif: Georgia, 'Times New Roman', serif;
-  --font-family-display: Georgia, 'Times New Roman', serif;
+  --font-family-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-serif: 'Tiempos Text', Georgia, 'Times New Roman', serif;
+  --font-family-display: 'Tiempos Headline', Georgia, 'Times New Roman', serif;
 
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
   --line-height-tight: 1.1;
   --line-height-snug: 1.2;
@@ -1465,14 +1648,16 @@
   --letter-spacing-tighter: -0.01em;
   --letter-spacing-normal: 0;
 
-  /* Responsive/fluid font sizes */
-  --font-size-hero: clamp(2.5rem, 6vw, 5rem);
-  --font-size-section-heading: clamp(2rem, 5vw, 4rem);
-  --font-size-section-heading-alt: clamp(2rem, 4vw, 3.5rem);
-  --font-size-subsection-heading: clamp(1.75rem, 4vw, 3rem);
-  --font-size-card-heading: clamp(1.5rem, 3vw, 2rem);
-  --font-size-stat: clamp(3rem, 6vw, 5rem);
-  --font-size-testimonial: clamp(1.25rem, 2vw, 1.5rem);
+  /* Responsive/fluid font sizes with improved scaling */
+  --font-size-hero: clamp(2.5rem, 5vw + 1rem, 6rem);
+  --font-size-section-heading: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  --font-size-section-heading-alt: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  --font-size-subsection-heading: clamp(1.75rem, 3vw + 0.5rem, 3rem);
+  --font-size-card-heading: clamp(1.5rem, 2.5vw + 0.5rem, 2rem);
+  --font-size-stat: clamp(3rem, 5vw + 1rem, 5.5rem);
+  --font-size-testimonial: clamp(1.25rem, 2vw, 1.75rem);
+  --font-size-body-large: clamp(1.125rem, 1.5vw + 0.5rem, 1.375rem);
+  --font-size-body: clamp(1rem, 0.5vw + 0.75rem, 1.125rem);
 
   /* === Gradients === */
   --gradient-bg-subtle: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(250, 250, 249, 0) 30%, rgba(160, 120, 85, 0.1) 60%, rgba(250, 250, 249, 0) 100%);
@@ -1643,6 +1828,110 @@ html {
 
 .bg-hero-overlay {
   background: var(--gradient-hero-overlay);
+}
+
+/* === Gradient Orb Backgrounds === */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.gradient-orb-warm {
+  background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
+}
+
+.gradient-orb-cool {
+  background: radial-gradient(circle, var(--color-teal) 0%, transparent 70%);
+}
+
+/* === Enhanced Typography Utilities === */
+.font-sans {
+  font-family: var(--font-family-sans);
+}
+
+.font-serif {
+  font-family: var(--font-family-serif);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-body-large {
+  font-size: var(--font-size-body-large);
+  line-height: var(--line-height-relaxed);
+}
+
+.text-body {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
+}
+
+.leading-body {
+  line-height: var(--line-height-relaxed);
+}
+
+/* === Color Utilities === */
+.text-teal {
+  color: var(--color-teal);
+}
+
+.text-teal-light {
+  color: var(--color-teal-light);
+}
+
+.text-blue {
+  color: var(--color-blue);
+}
+
+.bg-teal {
+  background-color: var(--color-teal);
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.border-teal {
+  border-color: var(--color-teal);
+}
+
+.border-blue {
+  border-color: var(--color-blue);
+}
+
+/* === Enhanced Animations === */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
 
 @property --tw-space-y-reverse {
