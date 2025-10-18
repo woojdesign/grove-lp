@@ -1834,17 +1834,17 @@ html {
 .gradient-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.15;
+  filter: blur(120px);
+  opacity: 0.35;
   pointer-events: none;
 }
 
 .gradient-orb-warm {
-  background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--color-accent) 0%, var(--color-accent-light) 30%, transparent 65%);
 }
 
 .gradient-orb-cool {
-  background: radial-gradient(circle, var(--color-teal) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--color-teal) 0%, var(--color-teal-light) 30%, transparent 65%);
 }
 
 /* === Enhanced Typography Utilities === */
