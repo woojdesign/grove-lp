@@ -7,6 +7,8 @@ import { Footer } from "../components/Footer";
 import { ProcessCard, TrustFeature, StatCard, TestimonialCard } from "../components/home";
 import { PageHead } from "../components/PageHead";
 import { HeadingWithEmphasis } from "../components/animations";
+import PhoneShowcase from "../components/PhoneShowcase";
+import { SHOWCASE_BASE_URL } from "../config/showcase";
 
 export function HomePage() {
   const fadeInUp = {
@@ -253,7 +255,9 @@ export function HomePage() {
               />
             </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-12 md:gap-16">
+            {/* iPhone Showcase */}
+            <PhoneShowcase showcaseBaseUrl={SHOWCASE_BASE_URL} />
+            <div className="grid md:grid-cols-3 gap-12 md:gap-16 mt-16">
               {content.process.steps.map((step, index) => (
                 <ProcessCard
                   key={step.number}

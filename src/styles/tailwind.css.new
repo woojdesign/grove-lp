@@ -453,7 +453,7 @@ html {
   .text-stat {
     font-size: var(--font-size-stat);
     line-height: 1;
-    color: hsl(var(--accent));
+    color: var(--accent);
   }
 
   .text-testimonial {
@@ -463,11 +463,11 @@ html {
   }
 
   .text-accent-color {
-    color: hsl(var(--accent));
+    color: var(--accent);
   }
 
   .text-secondary-color {
-    color: hsl(var(--secondary));
+    color: var(--secondary);
   }
 
   .leading-relaxed {
