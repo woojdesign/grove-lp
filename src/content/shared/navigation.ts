@@ -14,15 +14,15 @@ export const footerContent: FooterContent = {
   links: [
     {
       text: 'Privacy',
-      href: '#'
+      href: '/privacy'
     },
     {
       text: 'Security',
-      href: '#'
+      href: '/security'
     },
     {
       text: 'Contact',
-      href: '#'
+      href: '/contact'
     }
   ]
 };

@@ -1,7 +1,16 @@
 import { HomePageContent } from '../types';
 import heroImage from '../../assets/1d238fd6df90dc12f9289f962d9003c6c6a24d61.png';
+import featureImage from '../../assets/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg';
 
 export const homePageContent: HomePageContent = {
+  metadata: {
+    title: 'Commonplace | Meaningful Connections at Scale',
+    description: 'Commonplace quietly introduces you to people who share your passions, experiences, and goals — making large organizations feel human again.',
+    ogTitle: 'Commonplace - Human Connection Platform for Organizations',
+    ogDescription: 'AI-powered introductions that spark belonging. Used by companies and universities to help people meet others they\'d love to know but never meet.',
+    ogImage: 'https://commonplace.app/og-image.jpg'
+  },
+
   hero: {
     badge: 'Designed for human connection',
     headline: {
@@ -44,7 +53,7 @@ export const homePageContent: HomePageContent = {
 
   feature: {
     image: {
-      src: 'https://images.unsplash.com/photo-1753729213561-0fd9e4669d15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBjYWxtfGVufDF8fHx8MTc2MDQ4NjYzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      src: featureImage,
       alt: 'Modern workspace'
     },
     heading: {

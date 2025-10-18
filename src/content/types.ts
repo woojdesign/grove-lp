@@ -148,6 +148,7 @@ export interface FinalCTASection {
 }
 
 export interface HomePageContent {
+  metadata: PageMetadata;
   hero: HeroSection;
   socialProof: SocialProofSection;
   problem: ProblemSection;

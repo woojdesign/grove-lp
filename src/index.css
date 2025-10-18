@@ -1834,17 +1834,17 @@ html {
 .gradient-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.35;
+  filter: blur(200px);
+  opacity: 0.4;
   pointer-events: none;
 }
 
 .gradient-orb-warm {
-  background: radial-gradient(circle, var(--color-accent) 0%, var(--color-accent-light) 30%, transparent 65%);
+  background: radial-gradient(circle, var(--color-accent) 0%, var(--color-accent-light) 25%, transparent 80%);
 }
 
 .gradient-orb-cool {
-  background: radial-gradient(circle, var(--color-teal) 0%, var(--color-teal-light) 30%, transparent 65%);
+  background: radial-gradient(circle, var(--color-teal) 0%, var(--color-teal-light) 25%, transparent 80%);
 }
 
 /* === Enhanced Typography Utilities === */
@@ -1907,6 +1907,32 @@ html {
   border-color: var(--color-blue);
 }
 
+/* === Orb Size Utilities === */
+.orb-sm {
+  width: 600px;
+  height: 600px;
+}
+
+.orb-md {
+  width: 800px;
+  height: 800px;
+}
+
+.orb-lg {
+  width: 1000px;
+  height: 1000px;
+}
+
+.orb-xl {
+  width: 1200px;
+  height: 1200px;
+}
+
+.orb-2xl {
+  width: 1400px;
+  height: 1400px;
+}
+
 /* === Enhanced Animations === */
 @keyframes pulse-slow {
   0%, 100% {
@@ -1932,6 +1958,20 @@ html {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+@keyframes unblur {
+  0% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.animate-unblur {
+  filter: blur(10px);
+  animation: unblur 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @property --tw-space-y-reverse {
