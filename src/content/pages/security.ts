@@ -14,9 +14,9 @@ export interface SecurityPageContent {
 
 export const securityPageContent: SecurityPageContent = {
   metadata: {
-    title: 'Security | Commonplace',
-    description: 'Learn about Commonplace\'s security practices, compliance standards, and commitment to protecting your data.',
-    ogTitle: 'Security - Commonplace',
+    title: 'Security | Grove',
+    description: 'Learn about Grove\'s security practices, compliance standards, and commitment to protecting your data.',
+    ogTitle: 'Security - Grove',
     ogDescription: 'Enterprise-grade security and compliance for meaningful connections.',
   },
 
@@ -29,7 +29,7 @@ export const securityPageContent: SecurityPageContent = {
     {
       title: 'Built for Enterprise Security',
       content: [
-        'Commonplace is designed from the ground up with enterprise-grade security. We understand that organizations trust us with sensitive data about their people, and we take that responsibility seriously.',
+        'Grove is designed from the ground up with enterprise-grade security. We understand that organizations trust us with sensitive data about their people, and we take that responsibility seriously.',
         'Our security practices meet or exceed industry standards, including SOC2 Type II readiness and GDPR compliance. We continuously monitor, test, and improve our security posture.'
       ]
     },
@@ -44,7 +44,7 @@ export const securityPageContent: SecurityPageContent = {
     {
       title: 'Infrastructure Security',
       content: [
-        'Commonplace runs on secure cloud infrastructure with tier-appropriate providers who maintain SOC2, ISO 27001, and other critical certifications.',
+        'Grove runs on secure cloud infrastructure with tier-appropriate providers who maintain SOC2, ISO 27001, and other critical certifications.',
         'Our infrastructure includes redundant systems, automated backups, and disaster recovery capabilities to ensure data availability and resilience.',
         'We employ network segmentation, firewalls, and intrusion detection systems to protect against unauthorized access.'
       ]
@@ -95,7 +95,7 @@ export const securityPageContent: SecurityPageContent = {
     {
       title: 'Employee Training',
       content: [
-        'All Commonplace team members receive regular security awareness training covering topics like phishing, social engineering, and data handling best practices.',
+        'All Grove team members receive regular security awareness training covering topics like phishing, social engineering, and data handling best practices.',
         'Security is part of our culture — every team member is empowered and expected to prioritize user data protection.'
       ]
     },
@@ -110,7 +110,7 @@ export const securityPageContent: SecurityPageContent = {
     {
       title: 'Responsible Disclosure',
       content: [
-        'We welcome reports from security researchers who discover potential vulnerabilities in Commonplace.',
+        'We welcome reports from security researchers who discover potential vulnerabilities in Grove.',
         'If you\'ve found a security issue, please report it responsibly to security@commonplace.app. We\'ll acknowledge your report within 48 hours and work with you to understand and address the issue.',
         'We\'re committed to transparency and will provide updates on remediation efforts for verified vulnerabilities.'
       ]

@@ -15,9 +15,9 @@ export interface PrivacyPageContent {
 
 export const privacyPageContent: PrivacyPageContent = {
   metadata: {
-    title: 'Privacy Policy | Commonplace',
-    description: 'Learn how Commonplace protects your privacy and handles your personal information.',
-    ogTitle: 'Privacy Policy - Commonplace',
+    title: 'Privacy Policy | Grove',
+    description: 'Learn how Grove protects your privacy and handles your personal information.',
+    ogTitle: 'Privacy Policy - Grove',
     ogDescription: 'Our commitment to protecting your privacy and personal data.',
   },
 
@@ -31,7 +31,7 @@ export const privacyPageContent: PrivacyPageContent = {
     {
       title: 'Our Commitment to Privacy',
       content: [
-        'At Commonplace, we believe meaningful connections should never come at the cost of your privacy. We\'re committed to transparency about what data we collect, how we use it, and the choices you have.',
+        'At Grove, we believe meaningful connections should never come at the cost of your privacy. We\'re committed to transparency about what data we collect, how we use it, and the choices you have.',
         'This privacy policy explains our practices in clear, straightforward language — because privacy policies shouldn\'t require a law degree to understand.'
       ]
     },
@@ -40,7 +40,7 @@ export const privacyPageContent: PrivacyPageContent = {
       content: [
         'To facilitate meaningful introductions, we collect information you provide when creating your profile, including your name, work email, interests, experiences, and responses to our onboarding questions.',
         'We also collect basic usage data to improve our service, such as which features you use, when you log in, and technical information like your device type and browser.',
-        'We do not track your browsing behavior outside of Commonplace, and we never sell your personal information to third parties.'
+        'We do not track your browsing behavior outside of Grove, and we never sell your personal information to third parties.'
       ]
     },
     {
@@ -48,7 +48,7 @@ export const privacyPageContent: PrivacyPageContent = {
       content: [
         'Your profile information powers our AI matching system, which uses semantic embeddings to find people with shared interests and experiences. This processing happens securely within our systems.',
         'We use aggregated, anonymized data to help organizations understand program engagement and effectiveness — but we never share individual-level activity or identify specific users to administrators.',
-        'Your data is used exclusively to connect you with others in your community and improve the Commonplace experience. We don\'t use it for advertising or unrelated purposes.'
+        'Your data is used exclusively to connect you with others in your community and improve the Grove experience. We don\'t use it for advertising or unrelated purposes.'
       ]
     },
     {
@@ -71,7 +71,7 @@ export const privacyPageContent: PrivacyPageContent = {
       title: 'Data Retention',
       content: [
         'We retain your profile information for as long as your account is active. If you delete your account, we remove your personal data within 30 days, though we may retain anonymized analytics data.',
-        'Organizations may have their own data retention policies. When your organization\'s Commonplace program ends, we work with them to ensure proper data handling according to their preferences and applicable regulations.'
+        'Organizations may have their own data retention policies. When your organization\'s Grove program ends, we work with them to ensure proper data handling according to their preferences and applicable regulations.'
       ]
     },
     {
@@ -84,21 +84,21 @@ export const privacyPageContent: PrivacyPageContent = {
     {
       title: 'Third-Party Services',
       content: [
-        'We work with carefully selected service providers who help us operate Commonplace, including cloud hosting, email delivery, and analytics. These partners are contractually required to protect your data and use it only for Commonplace-related services.',
+        'We work with carefully selected service providers who help us operate Grove, including cloud hosting, email delivery, and analytics. These partners are contractually required to protect your data and use it only for Grove-related services.',
         'We do not share your data with third parties for their own marketing or unrelated purposes.'
       ]
     },
     {
       title: 'Children\'s Privacy',
       content: [
-        'Commonplace is designed for organizations and is not intended for children under 16. We do not knowingly collect information from children. If you believe we\'ve inadvertently collected data from a child, please contact us immediately.'
+        'Grove is designed for organizations and is not intended for children under 16. We do not knowingly collect information from children. If you believe we\'ve inadvertently collected data from a child, please contact us immediately.'
       ]
     },
     {
       title: 'Changes to This Policy',
       content: [
         'We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. We\'ll notify you of significant changes via email or through the platform.',
-        'Continued use of Commonplace after changes take effect constitutes acceptance of the updated policy.'
+        'Continued use of Grove after changes take effect constitutes acceptance of the updated policy.'
       ]
     },
     {

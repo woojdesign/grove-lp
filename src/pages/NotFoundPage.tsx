@@ -8,7 +8,7 @@ export function NotFoundPage() {
     <>
       <PageHead
         metadata={{
-          title: 'Page Not Found | Commonplace',
+          title: 'Page Not Found | Grove',
           description: 'The page you\'re looking for doesn\'t exist.',
         }}
         noindex={true}

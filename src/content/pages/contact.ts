@@ -15,29 +15,29 @@ export interface ContactPageContent {
 
 export const contactPageContent: ContactPageContent = {
   metadata: {
-    title: 'Contact Us | Commonplace',
-    description: 'Get in touch with Commonplace. We\'re here to answer questions, discuss partnerships, and help you build meaningful connections.',
-    ogTitle: 'Contact Us - Commonplace',
-    ogDescription: 'Questions about Commonplace? We\'d love to hear from you.',
+    title: 'Contact Us | Grove',
+    description: 'Get in touch with Grove. We\'re here to answer questions, discuss partnerships, and help you build meaningful connections.',
+    ogTitle: 'Contact Us - Grove',
+    ogDescription: 'Questions about Grove? We\'d love to hear from you.',
   },
 
   hero: {
     title: 'Get in Touch',
-    description: 'We\'d love to hear from you. Whether you\'re interested in bringing Commonplace to your organization or just have questions, reach out anytime.'
+    description: 'We\'d love to hear from you. Whether you\'re interested in bringing Grove to your organization or just have questions, reach out anytime.'
   },
 
   sections: [
     {
       title: 'General Inquiries',
       content: [
-        'For general questions about Commonplace, how it works, or anything else, drop us a line.',
+        'For general questions about Grove, how it works, or anything else, drop us a line.',
       ],
       email: 'hello@commonplace.app'
     },
     {
       title: 'Enterprise & Partnerships',
       content: [
-        'Interested in bringing Commonplace to your company, university, or organization? We\'d love to discuss how we can help foster meaningful connections in your community.',
+        'Interested in bringing Grove to your company, university, or organization? We\'d love to discuss how we can help foster meaningful connections in your community.',
         'Whether you\'re just exploring options or ready to start a pilot, our partnerships team is here to help.'
       ],
       email: 'partnerships@commonplace.app'
@@ -61,7 +61,7 @@ export const contactPageContent: ContactPageContent = {
     {
       title: 'Support',
       content: [
-        'If you\'re already using Commonplace and need help, our support team is ready to assist.',
+        'If you\'re already using Grove and need help, our support team is ready to assist.',
         'For technical issues, account questions, or general support, we\'re here.'
       ],
       email: 'support@commonplace.app'
@@ -76,7 +76,7 @@ export const contactPageContent: ContactPageContent = {
     {
       title: 'Mailing Address',
       content: [
-        'Commonplace',
+        'Grove',
         'San Francisco, CA',
         'USA'
       ]
@@ -85,7 +85,7 @@ export const contactPageContent: ContactPageContent = {
       title: 'We\'re Human Too',
       content: [
         'We read every email and try to respond as quickly as possible. While we can\'t guarantee immediate responses, we typically reply within 1-2 business days.',
-        'Thanks for your interest in Commonplace. We look forward to hearing from you.'
+        'Thanks for your interest in Grove. We look forward to hearing from you.'
       ]
     }
   ]
