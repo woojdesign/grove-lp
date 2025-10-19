@@ -4,7 +4,7 @@ import featureImage from '../../assets/priscilla-du-preez-K8XYGbw4Ahg-unsplash.j
 
 export const schoolsPageContent: HomePageContent = {
   metadata: {
-    title: 'Grove | Meaningful Connections for Students',
+    title: 'Grove | Schools',
     description: 'Grove introduces students to people who share their passions, experiences, and goals — helping students feel more connected on and off campus.',
     ogTitle: 'Grove - Student Connection Platform for Universities',
     ogDescription: 'AI-powered introductions that help students meet others they\'d love to know but never meet. Used by colleges and universities to deepen community.',

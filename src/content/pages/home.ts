@@ -4,9 +4,9 @@ import featureImage from '../../assets/priscilla-du-preez-K8XYGbw4Ahg-unsplash.j
 
 export const homePageContent: HomePageContent = {
   metadata: {
-    title: 'Commonplace | Meaningful Connections at Scale',
+    title: 'Grove | Enterprise',
     description: 'Commonplace quietly introduces you to people who share your passions, experiences, and goals — making large organizations feel human again.',
-    ogTitle: 'Commonplace - Human Connection Platform for Organizations',
+    ogTitle: 'Grove - Human Connection Platform for Organizations',
     ogDescription: 'AI-powered introductions that spark belonging. Used by companies and universities to help people meet others they\'d love to know but never meet.',
     ogImage: 'https://commonplace.app/og-image.jpg'
   },
