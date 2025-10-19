@@ -1,5 +1,5 @@
 import { HomePageContent } from '../types';
-import heroImage from '../../assets/1d238fd6df90dc12f9289f962d9003c6c6a24d61.png';
+import heroImage from '../../assets/enterprise-hero.jpg';
 import featureImage from '../../assets/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg';
 
 export const homePageContent: HomePageContent = {
