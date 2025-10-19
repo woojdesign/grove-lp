@@ -1,5 +1,5 @@
 import { HomePageContent } from '../types';
-import heroImage from '../../assets/1d238fd6df90dc12f9289f962d9003c6c6a24d61.png';
+import heroImage from '../../assets/schools-hero.jpg';
 import featureImage from '../../assets/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg';
 
 export const schoolsPageContent: HomePageContent = {
@@ -67,7 +67,7 @@ export const schoolsPageContent: HomePageContent = {
   process: {
     heading: {
       before: 'No scrolling. No feeds. Just connection.',
-      highlight: 'Deepen community across your student population.'
+      highlight: 'Deepen community across your student body.'
     },
     steps: [
       {
