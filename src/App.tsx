@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
+import { SchoolsPage } from "./pages/SchoolsPage";
 import { PrivacyPage } from "./pages/PrivacyPage";
 import { SecurityPage } from "./pages/SecurityPage";
 import { ContactPage } from "./pages/ContactPage";
@@ -9,6 +10,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/schools" element={<SchoolsPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
       <Route path="/security" element={<SecurityPage />} />
       <Route path="/contact" element={<ContactPage />} />

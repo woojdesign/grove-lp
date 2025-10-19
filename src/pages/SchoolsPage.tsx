@@ -2,7 +2,7 @@ import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { motion } from "motion/react";
 import { ArrowRight, Shield, UserCheck, BarChart3, Key, type LucideIcon } from "lucide-react";
-import { homePageContent } from "../content/pages/home";
+import { schoolsPageContent } from "../content/pages/schools";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { ProcessCard, TrustFeature, StatCard, TestimonialCard } from "../components/home";
@@ -11,14 +11,14 @@ import { HeadingWithEmphasis } from "../components/animations";
 import PhoneShowcase from "../components/PhoneShowcase";
 import { SHOWCASE_BASE_URL } from "../config/showcase";
 
-export function HomePage() {
+export function SchoolsPage() {
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] }
   };
 
-  const content = homePageContent;
+  const content = schoolsPageContent;
 
   // Icon mapping for trust features
   const iconMap: Record<string, LucideIcon> = {
@@ -27,10 +27,6 @@ export function HomePage() {
     BarChart3,
     Key,
   };
-
-  // Debug: Log trust features to console
-  console.log('Trust features:', content.trust.features);
-  console.log('Icon map:', iconMap);
 
   return (
     <>
@@ -249,7 +245,7 @@ export function HomePage() {
           </div>
         </section>
 
-        {/* How Commonplace Works - Minimal Cards */}
+        {/* How Grove Works - Minimal Cards */}
         <section className="py-32 md:py-40 bg-muted/30 relative overflow-hidden">
           {/* Floating gradient orbs */}
           <div className="gradient-orb gradient-orb-cool absolute animate-float orb-2xl" style={{ top: '0px', left: '-300px', zIndex: 0, animationDelay: '0s' }} />
@@ -433,4 +429,3 @@ export function HomePage() {
     </>
   );
 }
-
